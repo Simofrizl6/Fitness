@@ -1,0 +1,92 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          
+          <!DOCTYPE html>
+<html>
+<head>
+	<title>Webseite Name</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Männer</a></li>
+				<li><a href="#">Frauen</a></li>
+				<li><a href="#">Supplements</a></li>
+				<li><a href="#">Alles</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="featured">
+			<h2>Feature-Produkt</h2>
+			<img src="feature-image.jpg" alt="Feature-Produkt">
+			<p>Beschreibung des Feature-Produkts.</p>
+			<button type="button">Jetzt kaufen</button>
+		</section>
+		<section class="products">
+			<h2>Produkte</h2>
+			<ul>
+				<li>
+					<img src="product-image1.jpg" alt="Produkt 1">
+					<h3>Produkt 1</h3>
+					<p>Beschreibung des Produkts 1.</p>
+					<button type="button">Jetzt kaufen</button>
+				</li>
+				<li>
+					<img src="product-image2.jpg" alt="Produkt 2">
+					<h3>Produkt 2</h3>
+					<p>Beschreibung des Produkts 2.</p>
+					<button type="button">Jetzt kaufen</button>
+				</li>
+				<li>
+					<img src="product-image3.jpg" alt="Produkt 3">
+					<h3>Produkt 3</h3>
+					<p>Beschreibung des Produkts 3.</p>
+					<button type="button">Jetzt kaufen</button>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright © Jahr | Webseite Name 
+		</p>
+	</footer>
+</body>
+</html>
+
